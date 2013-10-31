@@ -1,6 +1,6 @@
-# Sendgrid-php
+# Sendgrid-google-php
 
-This library allows you to quickly and easily send emails through SendGrid using PHP.
+This library allows you to quickly and easily send emails from Google App Engine through SendGrid using PHP.
 
 Important: This library requires PHP 5.3 or higher.
 
