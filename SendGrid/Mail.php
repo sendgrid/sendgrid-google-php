@@ -23,6 +23,7 @@ class Mail
   {
     $this->from_name = false;
     $this->reply_to = false;
+    $this->setCategory("google_php");
   }
 
   /**
