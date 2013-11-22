@@ -517,7 +517,8 @@ class Mail
   public function setCategories($category_list)
   {
     $this->header_list['category'] = $category_list;
-
+    $this->addCategory('google_php');
+    
     return $this;
   }
 
@@ -531,6 +532,7 @@ class Mail
   public function setCategory($category)
   {
     $this->header_list['category'] = array($category);
+    $this->addCategory('google_php');
 
     return $this;
   }
@@ -538,7 +540,7 @@ class Mail
   /** 
    * addCategory
    * Append a category to the list of categories
-
+   *
    * @param  String         $category  the new category to append
    * @return SendGrid\Mail             the SendGrid\Mail object.
    */
