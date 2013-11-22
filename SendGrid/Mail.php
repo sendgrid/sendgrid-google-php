@@ -23,7 +23,7 @@ class Mail
   {
     $this->from_name = false;
     $this->reply_to = false;
-    $this->setCategory("google_php");
+    $this->setCategory("google_sendgrid_php_lib");
   }
 
   /**
@@ -517,8 +517,8 @@ class Mail
   public function setCategories($category_list)
   {
     $this->header_list['category'] = $category_list;
-    $this->addCategory('google_php');
-    
+    $this->addCategory('google_sendgrid_php_lib');
+
     return $this;
   }
 
@@ -532,7 +532,7 @@ class Mail
   public function setCategory($category)
   {
     $this->header_list['category'] = array($category);
-    $this->addCategory('google_php');
+    $this->addCategory('google_sendgrid_php_lib');
 
     return $this;
   }
